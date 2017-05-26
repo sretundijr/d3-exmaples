@@ -12,8 +12,22 @@ module.exports = {
         path: DIST_DIR,
         filename: "bundle.js"
     },
-
-    resolve: {
-        extensions: ['.js', '.jsx']
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['env']
+                    }
+                }
+            }
+        ]
     }
+    // resolve: {
+    //     extensions: ['.js', '.jsx']
+    // }
+
 };

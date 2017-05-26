@@ -70,33 +70,43 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "index.html";
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports) {
+"use strict";
 
 
-
-var add = function () {
+var add = function add() {
     return 1 === 1;
-}
+};
 
 var hello2 = function testing2() {
     return console.log('hello again from the watcher 2');
-}()
+}();
 
+module.exports = { add: add, hello2: hello2 };
 
-module.exports = add;
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "index.html";
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(0);
+"use strict";
+
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 __webpack_require__(1);
 
+__webpack_require__(0);
+
+var EvenMOreMagic = function EvenMOreMagic() {
+    _classCallCheck(this, EvenMOreMagic);
+
+    console.log(arguments.length <= 0 ? undefined : arguments[0]);
+};
 
 /***/ })
 /******/ ]);
