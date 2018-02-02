@@ -1,6 +1,8 @@
-require("file-loader?name=index.html!./index.html");
+require("file-loader?name=index.html!./client/index.html");
 
 require('./validation');
+
+require('./client/js/index');
 
 class EvenMOreMagic {
     constructor(...args) {
