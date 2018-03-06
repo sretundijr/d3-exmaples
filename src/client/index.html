@@ -1,29 +1,27 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Frequency Count</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <script defer src="/bundle.js"></script>
 </head>
 
 <body>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-    <div id="hello" class="world">
-        <p>hello world</p>
+    <header>
+        <h1>Letter Analyzer</h1>
+        <form>
+            <input type="text">
+            <button type="submit">Count the Letters!</button>
+            <button id="reset" type="button">Reset</button>
+        </form>
+    </header>
+    <div>
+        <h2 id="phrase"></h2>
+        <h4 id="count"></h4>
+        <div id="letters"></div>
     </div>
-
 </body>
 
 </html>
